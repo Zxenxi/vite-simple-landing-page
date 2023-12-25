@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import Logo from "../assets/Logo.svg";
 import { HiBars3BottomRight, HiXCircle } from "react-icons/hi2";
@@ -16,16 +15,17 @@ export const Navbar = () => {
     { id: "3", name: "Profile" },
     { id: "4", name: "Communities" },
   ];
+
   return (
-    <header className=" container mx-auto text-white ">
+    <header className="container mx-auto text-white">
       <nav>
-        <div className="flex h-32 justify-between items-center mx-5 uppercase ">
+        <div className="flex h-32 justify-between items-center mx-5 uppercase z-18">
           <img src={Logo} alt="logo" />
-          <ul className="hidden md:flex space-x-6 ">
+          <ul className="hidden md:flex space-x-6">
             {MenuItem.map(({ id, name }) => (
               <li
                 key={id}
-                className="realtive tracking-wider cursor-pointer hover:font-bold duration-200 "
+                className="relative tracking-wider cursor-pointer hover:font-bold duration-200"
               >
                 {name}
               </li>
@@ -36,12 +36,12 @@ export const Navbar = () => {
           </button>
         </div>
         <div
-          className={`${
-            Nav ? "translate-y-0" : "-translate-y-full"
-          } " left-0 top-0 h-fit transform-all transition-all ease-in-out duration-150 absolute"`}
+          className={`absolute bg-black pt-28 left-0 h-screen w-full transform z-19 ${
+            Nav ? "translate-x-0" : "-translate-x-full"
+          } transition-all ease-in-out duration-150`}
         >
           {Nav && (
-            <ul className="flex flex-col items-center justify-center space-y-6 h-[500px] uppercase font-serif text-2xl -mt-24">
+            <ul className="flex flex-col items-center justify-center space-y-6 uppercase font-serif text-2xl -mt-24">
               {MenuItem.map(({ id, name }) => (
                 <li key={id} className="tracking-wider">
                   {name}

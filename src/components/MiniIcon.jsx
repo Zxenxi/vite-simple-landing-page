@@ -13,7 +13,7 @@ export const SectionThree = () => {
           Who We Colaborate With!
         </h1>
       </div>
-      <div className="flex gap-5 justify-evenly h-12">
+      <div className="flex md:gap-5 justify-evenly h-12">
         <img src={git} alt="" className="w-auto" />
         <img src={google} alt="" className="w-auto" />
         <img src={Dc} alt="" className="w-auto" />

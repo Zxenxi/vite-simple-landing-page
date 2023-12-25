@@ -8,18 +8,18 @@ export const Services = () => {
         Skills Intended
       </h1>
       <div className="container mx-auto">
-        <div className="grid grid-cols-3 gap-5">
-          <div className="rounded shadow-2xl aspect-w-1 aspect-h-1">
+        <div className="grid md:grid-cols-3 gap-5">
+          <div className="rounded shadow-2xl ">
             <div className="px-2 py-10">
               <h1 className="text-center">React</h1>
             </div>
           </div>
-          <div className="rounded shadow-2xl aspect-w-1 aspect-h-1">
+          <div className="rounded shadow-2xl ">
             <div className="px-2 py-10 flex justify-center items-center">
               <h1 className="text-center">React</h1>
             </div>
           </div>
-          <div className="rounded shadow-2xl h-36 w-36">
+          <div className="rounded shadow-2xl ">
             <div className="px-2 py-10">
               <h1 className="text-center">React</h1>
             </div>

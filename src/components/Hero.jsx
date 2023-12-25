@@ -4,7 +4,7 @@ import img from "../assets/Image.svg";
 
 export const Hero = () => {
   return (
-    <section className="container mx-auto text-white mt-16 md:-mt-16">
+    <section className="container mx-auto text-white mt-28 md:-mt-16">
       <div className="flex flex-col-reverse md:flex-row justify-between items-center mx-11 h-screen">
         <div className="space-y-8 mb-72 md:mb-0 ">
           <h1 className="text-4xl md:text-6xl font-semibold">
